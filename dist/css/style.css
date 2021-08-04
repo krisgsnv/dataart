@@ -174,7 +174,7 @@ a {
   .header {
     padding-top: 7%;
     padding-bottom: 7%;
-    background: linear-gradient(125deg, transparent 12px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 12px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 12px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 12px, #FFF8EA 0) bottom left;
+    background: linear-gradient(125deg, transparent 9px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 9px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 9px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 9px, #FFF8EA 0) bottom left;
     background-size: 50% 50%;
     background-repeat: no-repeat;
   }
@@ -207,7 +207,7 @@ a {
     min-height: 500px;
     padding-top: 6%;
     padding-bottom: 8%;
-    background: linear-gradient(125deg, transparent 15px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 15px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 15px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 15px, #FFF8EA 0) bottom left;
+    background: linear-gradient(125deg, transparent 10px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 10px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 10px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 10px, #FFF8EA 0) bottom left;
     background-size: 50% 50%;
     background-repeat: no-repeat;
   }
@@ -672,18 +672,6 @@ a {
     position: sticky;
     z-index: 2;
     top: 24px;
-    cursor: pointer;
-    width: 160px;
-    height: 44px;
-    background: #FFFFFF;
-    border: 1px solid #E6E6E6;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 22px;
-    text-transform: uppercase;
-    font-family: 'Formular';
-    font-weight: bold;
-    font-size: 11px;
   }
   .dropdown__icon {
     display: flex;
@@ -702,14 +690,54 @@ a {
   }
   .dropdown__inner {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 160px;
+    height: 44px;
+    cursor: pointer;
+    background: #FFFFFF;
+    border: 1px solid #E6E6E6;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 22px;
+    text-transform: uppercase;
+    font-family: 'Formular';
+    font-weight: bold;
+    font-size: 11px;
   }
   .dropdown__outer {
-    position: absolute;
     height: 1724px;
     z-index: 3;
-    margin: 0;
+    margin: 0 auto;
+    position: absolute;
+  }
+  .dropdown__mobile {
+    width: 288px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    background-color: #FFFFFF;
+  }
+  .dropdown__heading-mobile-title {
+    font-family: 'Formular';
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 20px;
+  }
+  .dropdown__x-icon {
+    width: 10px;
+    height: 10px;
+  }
+  .dropdown__heading-mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 68px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 25px;
+  }
+  .dropdown__body-mobile {
+    height: 307px;
+    padding: 31px 30px 48px 50px;
   }
   .card-soon {
     text-align: center;
@@ -745,30 +773,7 @@ a {
     margin-bottom: 13px;
   }
   .sidebar {
-    background-color: #fff;
-    width: 288px;
-    padding-top: 0;
-    padding-left: 0;
-    padding-bottom: 48px;
-    z-index: 4;
-    top: 0;
-  }
-  .sidebar__heading-title {
-    font-family: 'Formular';
-    font-weight: bold;
-    font-size: 15px;
-    line-height: 20px;
-  }
-  .sidebar__heading {
-    padding: 23px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 68px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-  .sidebar__list {
-    margin: 31px 30px 0 50px;
+    display: none;
   }
   .sidebar__outer {
     margin-right: 0;

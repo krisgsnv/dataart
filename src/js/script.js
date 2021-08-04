@@ -16,22 +16,22 @@ window.addEventListener('scroll', () => {
 	
 });
 
-const dropDownButton = document.querySelector('.dropdown__outer');
-const sideBar = document.querySelector('.sidebar__outer');
-const xIcon = document.querySelector('.sidebar__x-icon');
+const dropDown = document.querySelector('.dropdown__inner');
+const dropDownMobile = document.querySelector('.dropdown__mobile');
+const xIcon = document.querySelector('.dropdown__x-icon');
 
-if (window.innerWidth < 930) {
-	sideBar.classList.add('sidebar-hide');
-}
-dropDownButton.addEventListener('click', () => {
-	sideBar.classList.toggle('sidebar-hide');
-	dropDownButton.classList.toggle('sidebar-hide');
+
+dropDown.addEventListener('click', () => {
+	dropDown.classList.toggle('sidebar-hide');
+	dropDown.classList.toggle('dropdown__inner');
+	dropDownMobile.classList.toggle('sidebar-hide');
 	
  });
 
  xIcon.addEventListener('click', () => {
-	sideBar.classList.toggle('sidebar-hide');
-	dropDownButton.classList.toggle('sidebar-hide');
+	dropDown.classList.toggle('sidebar-hide');
+	dropDown.classList.toggle('dropdown__inner');
+	dropDownMobile.classList.toggle('sidebar-hide');
 	
  });
 

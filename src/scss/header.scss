@@ -130,10 +130,10 @@ $header-background: #FFF8EA;
     .header {
         padding-top: 7%;
         padding-bottom: 7%;
-        background: linear-gradient(125deg, transparent 12px, $header-background 0) top left,
-        linear-gradient(-125deg, transparent 12px, $header-background 0) top right,
-        linear-gradient(-55deg, transparent 12px, $header-background 0) bottom right,
-        linear-gradient(55deg, transparent 12px, $header-background 0) bottom left;
+        background: linear-gradient(125deg, transparent 9px, $header-background 0) top left,
+        linear-gradient(-125deg, transparent 9px, $header-background 0) top right,
+        linear-gradient(-55deg, transparent 9px, $header-background 0) bottom right,
+        linear-gradient(55deg, transparent 9px, $header-background 0) bottom left;
         background-size: 50% 50%;
         background-repeat: no-repeat;   
         &__text {
@@ -167,10 +167,10 @@ $header-background: #FFF8EA;
         min-height: 500px;
         padding-top: 6%;
         padding-bottom: 8%;
-        background: linear-gradient(125deg, transparent 15px, $header-background 0) top left,
-        linear-gradient(-125deg, transparent 15px, $header-background 0) top right,
-        linear-gradient(-55deg, transparent 15px, $header-background 0) bottom right,
-        linear-gradient(55deg, transparent 15px, $header-background 0) bottom left;
+        background: linear-gradient(125deg, transparent 10px, $header-background 0) top left,
+        linear-gradient(-125deg, transparent 10px, $header-background 0) top right,
+        linear-gradient(-55deg, transparent 10px, $header-background 0) bottom right,
+        linear-gradient(55deg, transparent 10px, $header-background 0) bottom left;
         background-size: 50% 50%;
         background-repeat: no-repeat;  
         &__title {

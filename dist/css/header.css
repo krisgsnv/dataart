@@ -123,7 +123,7 @@
   .header {
     padding-top: 7%;
     padding-bottom: 7%;
-    background: linear-gradient(125deg, transparent 12px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 12px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 12px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 12px, #FFF8EA 0) bottom left;
+    background: linear-gradient(125deg, transparent 9px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 9px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 9px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 9px, #FFF8EA 0) bottom left;
     background-size: 50% 50%;
     background-repeat: no-repeat;
   }
@@ -156,7 +156,7 @@
     min-height: 500px;
     padding-top: 6%;
     padding-bottom: 8%;
-    background: linear-gradient(125deg, transparent 15px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 15px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 15px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 15px, #FFF8EA 0) bottom left;
+    background: linear-gradient(125deg, transparent 10px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 10px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 10px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 10px, #FFF8EA 0) bottom left;
     background-size: 50% 50%;
     background-repeat: no-repeat;
   }

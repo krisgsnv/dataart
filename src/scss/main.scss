@@ -7,7 +7,7 @@ $card-text: #262626;
 $sidebar-active-item: #EA6263;
 $sidebar-default-item: #999999;
 $bottom-text: #999999;
-$background-sidebar: #FFFFFF;
+$background-dropdown: #FFFFFF;
 $dropdown-text: #1A1A1A;
 
 .main {
@@ -318,18 +318,6 @@ $dropdown-text: #1A1A1A;
         position: sticky;
         z-index: 2;
         top: 24px;
-        cursor: pointer;
-        width: 160px;
-        height: 44px;
-        background: $background-sidebar;
-        border: 1px solid #E6E6E6;
-        box-sizing: border-box;
-        box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
-        border-radius: 22px;
-        text-transform: uppercase;
-        font-family: 'Formular';
-        font-weight: bold;
-        font-size: 11px;
         &__icon {
             display: flex;
             flex-direction: column;
@@ -348,14 +336,55 @@ $dropdown-text: #1A1A1A;
         }
         &__inner {
             display: flex;
-            align-items: center;
             justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            width: 160px;
+            height: 44px;
+            cursor: pointer;
+            background: $background-dropdown;
+            border: 1px solid #E6E6E6;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 22px;
+            text-transform: uppercase;
+            font-family: 'Formular';
+            font-weight: bold;
+            font-size: 11px;
         }
         &__outer {
-            position: absolute;
             height: 1724px;
             z-index: 3;
-            margin: 0;
+            margin: 0 auto;
+            position: absolute;
+        }
+        &__mobile {
+            width: 288px;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            border-radius: 4px;
+            background-color: $background-dropdown;
+        }
+        &__heading-mobile-title {
+            font-family: 'Formular';
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 20px;
+
+        }
+        &__x-icon {
+            width: 10px;
+            height: 10px;
+        }
+        &__heading-mobile {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 68px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            padding: 25px;
+        }
+        &__body-mobile {
+            height: 307px;
+            padding: 31px 30px 48px 50px;
         }
    }
    .card-soon {
@@ -392,31 +421,7 @@ $dropdown-text: #1A1A1A;
        }
    }
    .sidebar {
-       background-color: #fff;
-       width: 288px;
-       padding-top: 0;
-       padding-left: 0;
-       padding-bottom: 48px;
-       z-index: 4;
-       
-       top: 0;    
-       &__heading-title {
-        font-family: 'Formular';
-        font-weight: bold;
-        font-size: 15px;
-        line-height: 20px;
-       }
-       &__heading {
-           padding: 23px;
-           display: flex;
-           align-items: center;
-           justify-content: space-between;
-           height: 68px;
-           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-       }
-       &__list {
-            margin: 31px 30px 0 50px;;
-       }
+       display: none;   
        &__outer {
            margin-right: 0;
            position: sticky;
