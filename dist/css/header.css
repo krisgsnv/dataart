@@ -1,0 +1,247 @@
+.header {
+  max-width: 1360px;
+  min-width: 320px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__title {
+  font-size: calc(22px + 33 * ((100vw - 320px) / (1440 - 320)));
+  text-transform: uppercase;
+  font-family: 'RobotoMono';
+  font-weight: 700;
+  color: #15142C;
+  text-align: center;
+  letter-spacing: 0.02973em;
+  margin-bottom: 24px;
+  line-height: 120%;
+}
+
+.header__text {
+  font-family: 'RobotoMono';
+  font-size: calc(15px + 8 * ((100vw - 320px) / (1440 - 320)));
+  line-height: 152%;
+  text-align: center;
+  color: #1A1A1A;
+}
+
+.header__mobile-text {
+  font-family: 'RobotoMono';
+  font-size: calc(15px + 2 * ((100vw - 320px) / (667 - 320)));
+  line-height: 147%;
+  text-align: center;
+  color: #1A1A1A;
+}
+
+.header__share-text {
+  display: none;
+  text-align: center;
+  font-family: 'Formular';
+  color: #999999;
+  font-size: 13px;
+  margin-bottom: 13px;
+}
+
+.header__separator {
+  margin-top: 16px;
+}
+
+.header__content {
+  height: 100%;
+}
+
+@media screen and (max-width: 390px) {
+  .header {
+    height: 479px;
+    padding-top: 10%;
+    background: linear-gradient(125deg, transparent 7px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 7px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 7px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 7px, #FFF8EA 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .header__title {
+    margin-bottom: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .header__text {
+    display: none;
+  }
+  .header__mobile-text {
+    display: block;
+    max-width: 288px;
+    margin: 0 auto;
+  }
+  .header__logo {
+    width: 37%;
+    max-width: 150px;
+    height: auto;
+    margin-top: 10%;
+    margin-bottom: 79px;
+  }
+  .header__content {
+    background: url("../img/left-dots-mobile.svg") 0% 69% no-repeat, url("../img/right-dots-mobile.svg") 100% 69% no-repeat;
+  }
+  .header__share-text {
+    display: block;
+  }
+  .header__separator {
+    height: 24px;
+  }
+}
+
+@media screen and (min-width: 391px) and (max-width: 450px) {
+  .header {
+    height: 479px;
+    padding-top: 10%;
+    background: linear-gradient(125deg, transparent 7px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 7px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 7px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 7px, #FFF8EA 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .header__text {
+    display: none;
+  }
+  .header__share-text {
+    display: block;
+  }
+  .header__content {
+    background: url("../img/left-dots-mobile.svg") -15% 70% no-repeat, url("../img/right-dots-mobile.svg") 100% 70% no-repeat;
+    background-size: 41% auto, 53% auto;
+  }
+  .header__logo {
+    width: 118px;
+    max-width: 150px;
+    height: auto;
+    margin-top: 30px;
+    margin-bottom: 20%;
+  }
+  .header__separator {
+    height: 28px;
+  }
+}
+
+@media screen and (min-width: 451px) and (max-width: 667px) {
+  .header {
+    padding-top: 7%;
+    padding-bottom: 7%;
+    background: linear-gradient(125deg, transparent 12px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 12px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 12px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 12px, #FFF8EA 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .header__text {
+    display: none;
+  }
+  .header__share-text {
+    display: block;
+  }
+  .header__mobile-text {
+    margin: 0 5%;
+  }
+  .header__content {
+    background: url("../img/left-dots-mobile.svg") 0% 70% no-repeat, url("../img/right-dots-mobile.svg") 100% 70% no-repeat;
+    background-size: 38% auto, 50% auto;
+  }
+  .header__logo {
+    width: 118px;
+    height: auto;
+    margin-top: 6%;
+    margin-bottom: 17%;
+  }
+  .header__separator {
+    height: 30px;
+  }
+}
+
+@media screen and (min-width: 668px) and (max-width: 1023px) {
+  .header {
+    min-height: 500px;
+    padding-top: 6%;
+    padding-bottom: 8%;
+    background: linear-gradient(125deg, transparent 15px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 15px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 15px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 15px, #FFF8EA 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .header__title {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .header__text {
+    display: block;
+    margin: 0 auto;
+    max-width: 665px;
+  }
+  .header__share-text {
+    display: block;
+    font-size: 16px;
+  }
+  .header__mobile-text {
+    display: none;
+  }
+  .header__content {
+    background: url("../img/left-dots-mobile.svg") -5% 85% no-repeat, url("../img/right-dots-mobile.svg") 112% 85% no-repeat;
+    background-size: 34% auto, 44% auto;
+  }
+  .header__logo {
+    width: 20%;
+    max-width: 150px;
+    height: auto;
+    margin-top: 5%;
+    margin-bottom: 40px;
+  }
+  .header__separator {
+    height: 28px;
+  }
+  .header__content {
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header {
+    height: 730px;
+    padding: 67px 40px 74px;
+    background: linear-gradient(125deg, transparent 25px, #FFF8EA 0) top left, linear-gradient(-125deg, transparent 25px, #FFF8EA 0) top right, linear-gradient(-55deg, transparent 25px, #FFF8EA 0) bottom right, linear-gradient(55deg, transparent 25px, #FFF8EA 0) bottom left;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+  }
+  .header__title {
+    font-size: 55px;
+    margin-right: calc(50% - 866px/2);
+    margin-left: calc(50% - 866px/2);
+  }
+  .header__text {
+    margin-right: calc(50% - 950px/2);
+    margin-left: calc(50% - 950px/2);
+    font-size: 23px;
+    line-height: 35px;
+  }
+  .header__separator {
+    margin-top: 43px;
+  }
+  .header__logo {
+    margin-bottom: 48px;
+    margin-top: 56px;
+  }
+  .header__mobile-text {
+    display: none;
+  }
+  .header__share-text {
+    display: none;
+  }
+  .header__content {
+    height: 100%;
+    background: url("../img/left-dots.svg") bottom left no-repeat, url("../img/right-dots.svg") bottom right no-repeat;
+    background-size: 28% auto, 45% auto;
+  }
+}
+
+@media screen and (min-width: 1195px) {
+  .header {
+    height: 745px;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .header {
+    height: 770px;
+  }
+}

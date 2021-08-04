@@ -1,0 +1,104 @@
+@import 'reset';
+@import 'header';
+@import 'fonts';
+@import 'main';
+
+html {
+    min-width: 320px;
+}
+body {
+    overflow-x: hidden;
+}
+.page-container {
+    background: #000000;
+    padding: 84px 40px 231px;
+}
+.separator {
+    margin-left: auto;
+    margin-right: auto;
+}
+.logo {
+    margin-left: auto;
+    margin-right: auto;
+}
+.share-buttons {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    &__button {
+        border: 1px solid #E6E6E6;
+        border-radius: 2px;
+        cursor: pointer;
+        height: 36px;
+        width: 9.3%;
+        &_vk {
+            background: url('../img/share-buttons/vk.svg') #FFFFFF center no-repeat;
+            margin-right: 2px;
+        }
+        &_fb {
+            background: url('../img/share-buttons/facebook.svg') #FFFFFF center no-repeat;
+            margin-right: 2px;
+        }
+        &_ok {
+            background: url('../img/share-buttons/ok.svg') #FFFFFF center no-repeat;
+            margin-right: 2px;
+        }
+        &_tw {
+            background: url('../img/share-buttons/twitter.svg') #FFFFFF center no-repeat;
+        }
+    }
+
+}
+@media screen and (max-width: 391px) {
+    .page-container {
+        padding: 48px 0 231px;
+    }
+    .share-buttons {
+        &__button {
+            background-color: transparent;
+            border: none;
+            min-width: 44px;
+        }
+    }
+}
+@media screen and  (min-width: 392px) and (max-width: 1023px) {
+    .page-container {
+        padding: 48px 10px 231px;
+        .share-buttons {
+            &__button {
+                background-color: transparent;
+                border: none;
+                min-width: 44px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 668px) and (max-width: 1023px) {
+    .share-buttons {
+        &__button {
+            background-color: transparent;
+            border: none;
+            min-width: 44px;
+            margin-right: 0;
+            &_vk {
+                border-right: 1px solid #E6E6E6;
+                padding-right: 10px;
+            }
+            &_fb {
+                border-right: 1px solid #E6E6E6;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            &_ok {
+                border-right: 1px solid #E6E6E6;
+                padding-right: 10px;
+                padding-left: 10px;
+            }
+            &_tw {
+                padding-left: 10px;
+            }
+        }
+    }
+}
