@@ -561,6 +561,9 @@ a {
     text-align: left;
     padding-left: 241px;
   }
+  .dropdown__inner {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 930px) and (max-width: 1090px) {

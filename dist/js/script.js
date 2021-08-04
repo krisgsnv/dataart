@@ -11,6 +11,13 @@ window.addEventListener('scroll', () => {
 					}
 				});
 				document.querySelectorAll('.sidebar__item')[i].querySelector('a').classList.add('sidebar__link--active');
+				
+				document.querySelectorAll('.sidebar .sidebar-list .sidebar__item .sidebar__link').forEach((el) => {
+					if (el.classList.contains('sidebar__link--active')) {
+						el.classList.remove('sidebar__link--active');
+					}
+				});
+				document.querySelectorAll('.sidebar .sidebar-list .sidebar__item')[i].querySelector('a').classList.add('sidebar__link--active');
 			}
 		});
 	

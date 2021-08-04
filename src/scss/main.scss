@@ -201,6 +201,11 @@ $dropdown-text: #1A1A1A;
         text-align: left;
         padding-left: 241px;
     }
+    .dropdown {
+        &__inner {
+            display: none;
+        }
+    }
 }
 
 @media screen and (min-width: 930px) and (max-width: 1090px) {
